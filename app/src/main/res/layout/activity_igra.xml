@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IgraActivity">
+
+    <Button
+        android:id="@+id/triPoena"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+
+        android:text="3PT"
+
+        app:layout_constraintRight_toLeftOf= "@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/dvaPoena" />
+
+
+    <Button
+        android:id="@+id/dvaPoena"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+
+        android:text="2PT"
+
+        app:layout_constraintRight_toLeftOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/timJedanPoeni" />
+
+    <Button
+        android:id="@+id/dvaPoenaPokusaj"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+
+        android:text="2PTA"
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/timDvaPoeni" />
+
+
+    <Button
+        android:id="@+id/triPoenaPokusaj"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+
+        android:text="3PTA"
+        app:layout_constraintTop_toBottomOf="@id/dvaPoenaPokusaj"
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+        tools:layout_editor_absoluteX="222dp" />
+
+    <Button
+        android:id="@+id/slobodnoBacanje"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:text="FTM"
+
+
+        app:layout_constraintRight_toLeftOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/triPoena"
+
+        />
+
+    <Button
+        android:id="@+id/slobodnoBacanjePokusaj"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+
+        android:text="FTA"
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+
+        app:layout_constraintTop_toBottomOf="@id/triPoenaPokusaj" />
+
+    <Button
+        android:id="@+id/ofanzivniSkokovi"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+
+        android:text="O-SK"
+
+        app:layout_constraintRight_toLeftOf="@+id/guideline"
+
+        app:layout_constraintTop_toBottomOf="@+id/slobodnoBacanje"
+
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="276dp" />
+
+    <Button
+        android:id="@+id/defanzivniSkokovi"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+
+        android:text="D-SK"
+
+        app:layout_constraintLeft_toRightOf="@+id/guideline"
+
+        app:layout_constraintTop_toBottomOf="@+id/slobodnoBacanjePokusaj"
+
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="276dp" />
+
+
+    <Button
+        android:id="@+id/ukradene"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+
+        android:text="STL"
+
+        app:layout_constraintTop_toBottomOf="@+id/ofanzivniSkokovi"
+
+        app:layout_constraintRight_toLeftOf="@+id/guideline"
+
+        tools:layout_editor_absoluteX="133dp" />
+
+
+    <Button
+        android:id="@+id/asistencije"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+
+        android:text="AS"
+
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+
+        app:layout_constraintTop_toBottomOf="@id/defanzivniSkokovi"
+
+        />
+
+    <Button
+        android:id="@+id/blok"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+
+        android:layout_marginLeft="16dp"
+
+        android:layout_marginTop="10dp"
+
+        android:text="BLK"
+
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/asistencije" />
+
+    <Button
+        android:id="@+id/buttonSacuvaj"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+
+        android:text="SAC"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+
+        app:layout_constraintTop_toBottomOf="@id/blok" />
+
+
+    <Button
+        android:id="@+id/faulovi"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+
+        android:text="FOU"
+        app:layout_constraintRight_toLeftOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/ukradene" />
+
+    <RadioGroup
+        android:id="@+id/timJedan"
+        android:layout_width="60dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginRight="93dp"
+
+
+        app:layout_constraintRight_toLeftOf="@id/guideline"
+
+        app:layout_constraintTop_toBottomOf="@id/timJedanIgracPoeni">
+
+
+    </RadioGroup>
+
+
+
+    <RadioGroup
+        android:id="@+id/timDva"
+        android:layout_width="60dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="93dp"
+        android:layout_marginTop="10dp"
+
+
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/timDvaIgracPoeni">
+
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/timJedanIgracPoeni"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+
+        app:layout_constraintRight_toLeftOf="@id/timJedanPoeni"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/timJedanPoeni"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+
+
+        android:layout_marginTop="16dp"
+
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="@id/guideline"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/timDvaPoeni"
+        android:layout_width="60dp"
+
+        android:layout_height="70dp"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timDvaIgracPoeni"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+
+        app:layout_constraintLeft_toRightOf="@id/timDvaPoeni"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+
+    <TextView
+        android:id="@+id/prikazTeksta"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+
+        app:layout_constraintRight_toLeftOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/faulovi" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
